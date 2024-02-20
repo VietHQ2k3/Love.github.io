@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.wap{
+    color: #fff;
+}
+
+.cau{
+    font-size: 35px;
+    opacity: 0;
+    animation: fadeInAnimation 3s ease-in forwards;
+}
+
+canvas{
+    position: absolute;
+    left:0;
+    top: 0;
+    background-color: rgba(0,0,0,.2);
+    animation: 10s;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
